@@ -1,4 +1,5 @@
-Copyright 2015 - The CyanogenMod Project
+Copyright 2014-2015 - The CyanogenMod Project
+Copyright 2014-2015 - AOSPA-Legacy
 
 Sony Xperia L
 ==============
@@ -20,4 +21,6 @@ Camera  | 8MPx, LED Flash
 
 ![Sony Xperia L](http://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-l-01.jpg "Sony Xperia L in black")
 
-This branch is for building CyanogenMod 12 (or Android Lollipop 5.0 AOSP based roms) ROMS.
+
+This branch is for building AOSPA-Legacy maintained by DeviousFusion.
+

@@ -43,9 +43,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-#    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+#   frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
 
 # Platform specific overlays
 DEVICE_PACKAGE_OVERLAYS := device/sony/taoshan/overlay
@@ -229,14 +229,23 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonyericsson
 
-PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-PRODUCT_PACKAGES += Torch
 
 PRODUCT_PACKAGES += libtime_genoff
 
-# Product attributes
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 854
+TARGET_SCREEN_WIDTH := 480
+
+# Build fingerprints
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C2105 BUILD_FINGERPRINT=Sony/C2105/C2105:4.2.2/15.3.A.1.17/Android.1016:user/release-keys PRIVATE_BUILD_DESC="C2105-user 4.2.2 JDQ39 Android.1016 test-keys" BUILD_UTC_DATE=0
+
+# Device identifier
+PRODUCT_DEVICE := taoshan
+PRODUCT_NAME := cm_taoshan
+PRODUCT_BRAND := Sony
+PRODUCT_MODEL := C2105
+PRODUCT_MANUFACTURER := Sony
 PRODUCT_CHARACTERISTICS := phone
 
