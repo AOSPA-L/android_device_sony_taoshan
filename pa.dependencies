@@ -32,7 +32,7 @@
     {
         "remote":       "github",
         "repository":   "AOSPA-legacy/android_device_sony_msm8960-common",
-        "target_path":  "device/sony/qcom-common",
+        "target_path":  "device/sony/msm8960-common",
         "revision":     "lollipop"
     },
     {
