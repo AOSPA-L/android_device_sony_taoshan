@@ -3,25 +3,25 @@
         "remote":       "github",
         "repository":   "DeviousFusion/android_kernel_sony_msm8930",
         "target_path":  "kernel/sony/msm8930",
-        "revision":     "cm-12.0"
+        "revision":     "kexec"
     },
     {
         "remote":       "github",
-        "repository":   "DeviousFusion/android_device_sony_taoshan",
+        "repository":   "AOSPA-L/android_device_sony_taoshan",
         "target_path":  "device/sony/taoshan",
-        "revision":     "lollipop"
+        "revision":     "lollipop-mr1"
     },
     {
         "remote":       "github",
         "repository":   "CyanogenMod/android_device_qcom_common",
         "target_path":  "device/qcom/common",
-        "revision":     "cm-12.0"
+        "revision":     "cm-12.1"
     },
     {
         "remote":       "github",
         "repository":   "CyanogenMod/android_device_sony_common",
         "target_path":  "device/sony/common",
-        "revision":     "cm-12.0"
+        "revision":     "cm-12.1"
     },
     {
         "remote":       "github",
